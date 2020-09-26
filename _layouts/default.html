@@ -64,20 +64,16 @@
 <h1 id="header-1">Documentation</h3>
 <h2 id="header-2">Creating an Alert</h2>
 <br>
-<p>
   <div class="language-js highlighter-rouge">
         <code>var options = {...};<br>var SecurityAlert = new FAR.popup(options);
         </code>
   </div>
-  <br></p>
 <h2 id="header-2">Hoisting an Alert</h2>
 <br>
-<p>
   <div class="language-js highlighter-rouge">
         <code>// Hoist (show) Alert <br>SecurityAlert.hoist();<br>// Retract (hide) Alert<br>SecurityAlert.retract();
         </code>
   </div>
-  <br></p>
 <h2 id="header-2">Valid Alert Options</h2>
 <table>
   <thead>
@@ -108,10 +104,44 @@
       <td style="text-align: left">The title at top of the alert box</td>
       <td style="text-align: left">'Alert'</td>
     </tr>
+    <tr>
+      <td style="text-align: left">html</td>
+      <td style="text-align: left">The main inner-contents of the alert</td>
+      <td style="text-align: left">null</td>
+    </tr><tr>
+      <td style="text-align: left">jQuery</td>
+      <td style="text-align: left">Choose to disable usage of jQuery</td>
+      <td style="text-align: left">automatic</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">escapeKey</td>
+      <td style="text-align: left">Use the escape key to exit alerts</td>
+      <td style="text-align: left">true</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">newWindow</td>
+      <td style="text-align: left">Open the alert in a seperate window</td>
+      <td style="text-align: left">false</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">buttons</td>
+      <td style="text-align: left">The name and function of buttons on alert</td>
+      <td style="text-align: left"><b>SEE BELOW</b></td>
+    </tr>
   </tbody>
-</table>
-
-
+</table><br>
+<h2 id="header-2">Defining Alert Buttons</h2>
+When defining buttons in the Options object, it should be an Array of Object, containing the 'name' and 'func' of that button:
+<br>
+var options = {<br>
+&emsp;...
+&emsp;buttons: [
+&emsp;&emsp;{
+&emsp;&emsp;&emsp;name: 'Cancel'
+&emsp;&emsp;&emsp;func: 'doThis()'
+&emsp;&emsp;}
+&emsp;]
+};
       </section>
       <footer>
         
