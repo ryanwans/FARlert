@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>FARlert | FARLert</title>
+<title>FARlert</title>
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="FARlert" />
 <meta property="og:locale" content="en_US" />
@@ -56,23 +56,22 @@
   The alerts mimic that of Windows 10 dialogs, to give a professional and clean look to them. 
 <br /></p>
 <h3 id="header-3">Embed the CSS CDN</h3>
-<p><code class="language-html highlighter-rouge">&lt;script src="https://raw.githubusercontent.com/ryanwans/FARlert/master/FARlert.min.js"&gt;</script></code>
+<p><code class="language-html highlighter-rouge">https://raw.githubusercontent.com/ryanwans/FARlert/master/FARlert.style.css</script></code>
 <br /></p>
-<h3 id="retract-an-alert">Retract an alert</h3>
-<p><code class="language-plaintext highlighter-rouge">Alert.retract();</code>
+<h3 id="header-3">Embed the JS CDN</h3>
+<p><code class="language-html highlighter-rouge">https://raw.githubusercontent.com/ryanwans/FARlert/master/FARlert.min.js</script></code>
 <br /></p>
-<h3 id="options">Options</h3>
-<p><code class="language-plaintext highlighter-rouge">pageBlur</code>: Boolean. Blur the page behind an alert (defualt false)<br />
-<code class="language-plaintext highlighter-rouge">borderFlash</code>: Boolean. Flash the border of an alert red &amp; yellow (default false)<br />
-<code class="language-plaintext highlighter-rouge">jQuery</code>: Boolean. Choose to disable the usage of jQuery (default true)<br />
-<code class="language-plaintext highlighter-rouge">ding</code>: Boolean. Ding sound effect upon the hoisting of an alert (default false)<br />
-<code class="language-plaintext highlighter-rouge">moveable</code>: Boolean. Allow the alert to be dragged around (default true)<br />
-<code class="language-plaintext highlighter-rouge">escapeKey</code>: Boolean. Allow the usage of escape key to close alert (default true)<br />
-<code class="language-plaintext highlighter-rouge">title</code>: String. The title of the alert box (default “User Action Required”)<br />
-<code class="language-plaintext highlighter-rouge">html</code>: String. The inner html content of the alert (default “null”)<br />
-<code class="language-plaintext highlighter-rouge">buttons</code>: Array. An array of object (see below) for the escape buttons (default Close)<br />
-<code class="language-plaintext highlighter-rouge">newWindow</code>: Boolean. Open the alert in a seperate window. (default false)<br />
-<br /></p>
+<h1 id="header-1">Documentation</h3>
+<h2 id="header-2">Creating an Alert</h2>
+<br>
+<p>
+  <code class="language-js highlighter-rogue">
+    var options = {
+      ...
+    };
+    var SecurityAlert = new FAR.popup(options);
+  </code>
+  <br></p>
 <h3 id="example-of-buttons">Example of Buttons</h3>
 <p><code class="language-plaintext highlighter-rouge">[{name: 'Ignore', func: 'doThis()'}, {name: 'Browse...', func: 'doThat()'}]</code></p>
 
