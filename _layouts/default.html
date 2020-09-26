@@ -63,17 +63,15 @@
 <br /></p>
 <h1 id="header-1">Documentation</h3>
 <h2 id="header-2">Creating an Alert</h2>
-<br>
   <div class="language-js highlighter-rouge">
         <code>var options = {...};<br>var SecurityAlert = new FAR.popup(options);
         </code>
-  </div>
+  </div><br>
 <h2 id="header-2">Hoisting an Alert</h2>
-<br>
   <div class="language-js highlighter-rouge">
         <code>// Hoist (show) Alert <br>SecurityAlert.hoist();<br>// Retract (hide) Alert<br>SecurityAlert.retract();
         </code>
-  </div>
+  </div><br>
 <h2 id="header-2">Valid Alert Options</h2>
 <table>
   <thead>
@@ -134,13 +132,13 @@
 When defining buttons in the Options object, it should be an Array of Object, containing the 'name' and 'func' of that button:
 <br>
 var options = {<br>
-&emsp;...
-&emsp;buttons: [
-&emsp;&emsp;{
-&emsp;&emsp;&emsp;name: 'Cancel'
-&emsp;&emsp;&emsp;func: 'doThis()'
-&emsp;&emsp;}
-&emsp;]
+&emsp;. . .<br>
+&emsp;buttons: [<br>
+&emsp;&emsp;{<br>
+&emsp;&emsp;&emsp;name: 'Cancel'<br>
+&emsp;&emsp;&emsp;func: 'doThis()'<br>
+&emsp;&emsp;}<br>
+&emsp;]<br>
 };
       </section>
       <footer>
