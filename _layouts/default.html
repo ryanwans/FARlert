@@ -18,6 +18,12 @@
     <script src="https://raw.githubusercontent.com/ryanwans/FARlert/master/FARlert.min.js"></script>
 <meta property="og:url" content="https://ryanwans.github.io/FARlert/" />
 <meta property="og:site_name" content="FARLert" />
+   <script>
+  const Alert = new FAR.popup({
+    title: 'Sample Alert',
+    html: "Here, you can put any html you want!"
+  });
+</script>
 <script type="application/ld+json">
 {"@type":"WebSite","url":"https://ryanwans.github.io/FARlert/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ryanwans/FARlert/master/logoNormal.png"}},"headline":"FARlert","description":"A responsive, professional, clean-looking dialog/alert system","name":"FARLert","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
@@ -51,7 +57,7 @@
       <h1 id="farlert">Robust Alerts & Dialogs</h1>
 <p>Never have to worry about styling and scripting a dialog every again.
 <br /><br />
-  <buttton style="display:inline-block;padding:8px;border-radius:7px;border:#004e00 1px solid;background-color:#006d00;color:white;" onclick="Alert.hoist()">Hoist a Test Alert</button></p>
+  <buttton style="pointer:cursor;display:inline-block;padding:4px 8px;border-radius:7px;border:#004e00 1px solid;background-color:#006d00;color:white;" onclick="Alert.hoist()">Hoist a Test Alert</button></p>
 
 <h2 id="header-2">Why choose FARlert?</h3>
 <p>
@@ -166,10 +172,5 @@ var options = {<br>
       color: white;
     }
   </style>
-<script>
-  const Alert = new FAR.popup({
-    title: 'Sample Alert',
-    html: "Here, you can put any html you want!"
-  });
-</script>
+
 </html>
