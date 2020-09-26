@@ -1,8 +1,8 @@
 # FARlert
 Fast-Asynchronous-Responsive Alert
-<br>
+<br><br>
 ![example of alert](https://raw.githubusercontent.com/ryanwans/FARlert/master/exampleAlert.png)
-<br>
+
 ### Create an alert
 `var Alert = new FAR.popup({options...});`
 <br>
