@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>FARlert | FARLert</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="FARlert" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A responsive, professional, clean-looking dialog/alert system" />
+<meta property="og:description" content="A responsive, professional, clean-looking dialog/alert system" />
+<link rel="canonical" href="https://ryanwans.github.io/FARlert/" />
+<meta property="og:url" content="https://ryanwans.github.io/FARlert/" />
+<meta property="og:site_name" content="FARLert" />
+<script type="application/ld+json">
+{"@type":"WebSite","url":"https://ryanwans.github.io/FARlert/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ryanwans/FARlert/master/logoNormal.png"}},"headline":"FARlert","description":"A responsive, professional, clean-looking dialog/alert system","name":"FARLert","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/FARlert/assets/css/style.css?v=f5fd8406c49200fb5c156527677303c607c91121">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="https://ryanwans.github.io/FARlert/">FARLert</a></h1>
+        
+        
+          <img src="https://raw.githubusercontent.com/ryanwans/FARlert/master/logoNormal.png" alt="Logo" />
+        
+
+        <p>A responsive, professional, clean-looking dialog/alert system</p>
+
+        
+        <p class="view"><a href="https://github.com/ryanwans/FARlert">View the Project on GitHub <small>ryanwans/FARlert</small></a></p>
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="farlert">Robust Alerts & Dialogs</h1>
+<p>Fast-Asynchronous-Responsive Alert
+<br /><br />
+<img src="https://raw.githubusercontent.com/ryanwans/FARlert/master/exampleAlert.png" alt="example of alert" /></p>
+
+<h3 id="create-an-alert">Create an alert</h3>
+<p><code class="language-plaintext highlighter-rouge">var Alert = new FAR.popup({options...});</code>
+<br /></p>
+<h3 id="hoist-an-alert">Hoist an alert</h3>
+<p><code class="language-plaintext highlighter-rouge">Alert.hoist();</code>
+<br /></p>
+<h3 id="retract-an-alert">Retract an alert</h3>
+<p><code class="language-plaintext highlighter-rouge">Alert.retract();</code>
+<br /></p>
+<h3 id="options">Options</h3>
+<p><code class="language-plaintext highlighter-rouge">pageBlur</code>: Boolean. Blur the page behind an alert (defualt false)<br />
+<code class="language-plaintext highlighter-rouge">borderFlash</code>: Boolean. Flash the border of an alert red &amp; yellow (default false)<br />
+<code class="language-plaintext highlighter-rouge">jQuery</code>: Boolean. Choose to disable the usage of jQuery (default true)<br />
+<code class="language-plaintext highlighter-rouge">ding</code>: Boolean. Ding sound effect upon the hoisting of an alert (default false)<br />
+<code class="language-plaintext highlighter-rouge">moveable</code>: Boolean. Allow the alert to be dragged around (default true)<br />
+<code class="language-plaintext highlighter-rouge">escapeKey</code>: Boolean. Allow the usage of escape key to close alert (default true)<br />
+<code class="language-plaintext highlighter-rouge">title</code>: String. The title of the alert box (default “User Action Required”)<br />
+<code class="language-plaintext highlighter-rouge">html</code>: String. The inner html content of the alert (default “null”)<br />
+<code class="language-plaintext highlighter-rouge">buttons</code>: Array. An array of object (see below) for the escape buttons (default Close)<br />
+<code class="language-plaintext highlighter-rouge">newWindow</code>: Boolean. Open the alert in a seperate window. (default false)<br />
+<br /></p>
+<h3 id="example-of-buttons">Example of Buttons</h3>
+<p><code class="language-plaintext highlighter-rouge">[{name: 'Ignore', func: 'doThis()'}, {name: 'Browse...', func: 'doThat()'}]</code></p>
+
+
+      </section>
+      <footer>
+        
+        <p>This project is maintained by <a href="https://github.com/ryanwans">ryanwans</a></p>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/FARlert/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>
