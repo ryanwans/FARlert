@@ -22,25 +22,5 @@ Fast-Asynchronous-Responsive Alert
 `buttons`: Array. An array of object (see below) for the escape buttons (default Close)<br>
 `newWindow`: Boolean. Open the alert in a seperate window. (default false)<br>
 <br>
-### Example
-``
-var Alert1 = new FAR.popup({
-            borderFlash: true,
-            jQuery: false,
-            moveable: true,
-            ding: true,
-            html: "<span style='font-size:24px;font-weight:600'>Suspicious Login Attempt</span><br><br>We have detected that somebody has tried to enter your account without authorizaton!<br><br>We recommend you go to your settings to change your password.",
-            title: 'Account Security Alert',
-            buttons: [
-                {
-                    name: 'Settings',
-                    func: 'doSomething()'
-                },
-                {
-                    name: 'Ignore',
-                    func: 'Alert1.retract()'
-                }
-            ]
-        });
- Alert1.hoist();
-``
+### Example of Buttons
+`[{name: 'Ignore', func: 'doThis()'}, {name: 'Browse...', func: 'doThat()'}]`
