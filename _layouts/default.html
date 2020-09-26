@@ -12,10 +12,12 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A responsive, professional, clean-looking dialog/alert system" />
 <meta property="og:description" content="A responsive, professional, clean-looking dialog/alert system" />
-<link rel="canonical" href="https://ryanwans.github.io/FARlert/" />
+<link rel="canonical" type="text/css" href="https://ryanwans.github.io/FARlert/" />
+<link rel="stylesheet" href="https://raw.githubusercontent.com/ryanwans/FARlert/master/FARlert.style.css"/> 
 <meta property="og:url" content="https://ryanwans.github.io/FARlert/" />
 <meta property="og:site_name" content="FARLert" />
 <script type="application/ld+json">
+<script src="https://raw.githubusercontent.com/ryanwans/FARlert/master/FARlert.min.js"></script>
 {"@type":"WebSite","url":"https://ryanwans.github.io/FARlert/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ryanwans/FARlert/master/logoNormal.png"}},"headline":"FARlert","description":"A responsive, professional, clean-looking dialog/alert system","name":"FARLert","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
@@ -163,4 +165,10 @@ var options = {<br>
       color: white;
     }
   </style>
+<script>
+  const Alert = new FAR.popup({
+    title: 'Sample Alert',
+    html: "Here, you can put any html you want!"
+  });
+</script>
 </html>
