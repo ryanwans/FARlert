@@ -1,5 +1,7 @@
 # FARlert
 Fast-Asynchronous-Responsive Alert
+<br>
+![Visit the Website](https://ryanwans.github.io/FARlert)
 <br><br>
 ![example of alert](https://raw.githubusercontent.com/ryanwans/FARlert/master/exampleAlert.png)
 
